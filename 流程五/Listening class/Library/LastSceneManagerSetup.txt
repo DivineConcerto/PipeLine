@@ -1,0 +1,5 @@
+sceneSetups:
+- path: "Assets/\u6559\u5BA4\u6A21\u578B/JP_School classroom_V2/Scenes/School_Classroom.unity"
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
