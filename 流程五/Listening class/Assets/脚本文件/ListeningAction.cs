@@ -1,11 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class ListeningAction : MonoBehaviour
 {
     public AudioSource listeningTestAudio;
     public Animator Animator;
+    private int spacePressCount = 0;
 
     void Start()
     {
@@ -16,25 +16,29 @@ public class ListeningAction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartJumpAndAudio();
+            spacePressCount++;  // 空格键按下，计数器增加
+
+            if (spacePressCount % 2 != 0)
+            {
+                StartJumpAndAudio();
+            }
+            else
+            {
+                listeningTestAudio.Stop();  // 停止音频
+            }
         }
     }
 
     void StartJumpAndAudio()
     {
         listeningTestAudio.Play();
-        StartCoroutine(TriggerJumps());
+        
     }
 
-    IEnumerator TriggerJumps()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            yield return new WaitForSeconds(Random.Range(0.5f, listeningTestAudio.clip.length / 5));  // 根据音频的长度随机等待
-            Animator.SetTrigger("doJump");
-        }
-    }
 }
+
+
+
 
 
 

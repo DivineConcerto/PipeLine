@@ -7,8 +7,10 @@ public class Controll : MonoBehaviour
     private const float walkSpeed = 0.5f;
     private const float runSpeed = 1f;
     private bool isRunning = false;
+    private bool isMovingAllowed = true;
+    private int spacePressCount = 0;
 
-    private const float rotationSpeed = 3f; // 控制旋转的速度
+    private const float rotationSpeed = 3f;
 
     void Start()
     {
@@ -17,6 +19,14 @@ public class Controll : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            spacePressCount++;
+            isMovingAllowed = spacePressCount % 2 == 0;
+        }
+
+        if (!isMovingAllowed) return;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical);
@@ -41,11 +51,10 @@ public class Controll : MonoBehaviour
                 animator.SetBool("isRun", false);
             }
 
-            // 平滑旋转代码
             Quaternion targetRotation = Quaternion.LookRotation(dir);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime, Space.World);
         }
         else
         {
@@ -54,5 +63,6 @@ public class Controll : MonoBehaviour
         }
     }
 }
+
 
 
