@@ -123,6 +123,7 @@
 -define:PLAYMAKER_TMPRO
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/AI Toolbox/Runtime/AiToolbox.Runtime.dll"
 -r:"Assets/PlayMaker/ConditionalExpression.dll"
 -r:"Assets/Plugins/PlayMaker/PlayMaker.dll"
 -r:"D:/unity1.11/2021.3.27f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -332,6 +333,8 @@
 -r:"D:/unity1.11/2021.3.27f1c1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"D:/unity1.11/ChinaVr/PipeLine/流程五/Listening class/Library/PackageCache/com.unity.testtools.codecoverage@1.2.3/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"D:/unity1.11/ChinaVr/PipeLine/流程五/Listening class/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AiToolbox.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AiToolbox.Samples.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -1411,6 +1414,7 @@
 "Assets/Supercyan Character Pack Free Sample/Scripts/DemoFree.cs"
 "Assets/Supercyan Character Pack Free Sample/Scripts/FreeCameraLogic.cs"
 "Assets/Supercyan Character Pack Free Sample/Scripts/SimpleSampleCharacterControl.cs"
+"Assets/脚本文件/CameraMovement.cs"
 "Assets/脚本文件/Controll.cs"
 "Assets/脚本文件/FlipObject.cs"
 "Assets/脚本文件/ListeningAction.cs"

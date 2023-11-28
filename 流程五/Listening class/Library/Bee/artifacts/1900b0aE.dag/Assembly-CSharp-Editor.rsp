@@ -120,6 +120,10 @@
 -define:PLAYMAKER_TMPRO
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/AI Toolbox/Editor/AiToolbox.Editor.dll"
+-r:"Assets/AI Toolbox/Editor/ColorCode.Core.dll"
+-r:"Assets/AI Toolbox/Editor/ColorCode.HTML.dll"
+-r:"Assets/AI Toolbox/Runtime/AiToolbox.Runtime.dll"
 -r:"Assets/PlayMaker/ConditionalExpression.dll"
 -r:"Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll"
 -r:"Assets/PlayMaker/Editor/PlayMakerEditor.dll"
@@ -347,6 +351,8 @@
 -r:"D:/unity1.11/ChinaVr/PipeLine/流程五/Listening class/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"D:/unity1.11/ChinaVr/PipeLine/流程五/Listening class/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"D:/unity1.11/ChinaVr/PipeLine/流程五/Listening class/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AiToolbox.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AiToolbox.Samples.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"

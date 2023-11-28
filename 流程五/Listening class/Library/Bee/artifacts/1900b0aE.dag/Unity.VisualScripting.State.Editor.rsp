@@ -120,6 +120,10 @@
 -define:PLAYMAKER_TMPRO
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/AI Toolbox/Editor/AiToolbox.Editor.dll"
+-r:"Assets/AI Toolbox/Editor/ColorCode.Core.dll"
+-r:"Assets/AI Toolbox/Editor/ColorCode.HTML.dll"
+-r:"Assets/AI Toolbox/Runtime/AiToolbox.Runtime.dll"
 -r:"Assets/PlayMaker/ConditionalExpression.dll"
 -r:"Assets/PlayMaker/Editor/ConditionalExpressionEditor.dll"
 -r:"Assets/PlayMaker/Editor/PlayMakerEditor.dll"
